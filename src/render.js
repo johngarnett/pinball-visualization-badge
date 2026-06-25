@@ -20,6 +20,7 @@ const TOP_ANGLE = -Math.PI / 2
 // Style constants
 const COLOR_WIN = '#009A44'
 const COLOR_LOSS = '#CC1414'
+const COLOR_PENDING = '#0055CC'
 const COLOR_UNPLAYED = '#000000'
 const COLOR_BORDER = '#FFFFFF'
 const COLOR_TEXT = '#000000'
@@ -54,7 +55,7 @@ function parseResults(csvPath) {
     const opponent = (parts[1] || '').trim().toUpperCase()
     const machine = (parts[2] || '').trim()
     return {
-      result: result === 'win' || result === 'loss' ? result : 'unplayed',
+      result: ['win', 'loss', 'pending'].includes(result) ? result : 'unplayed',
       opponent,
       machine
     }
@@ -74,6 +75,7 @@ function sliceCenterAngle(i) {
 function sliceColor(result) {
   if (result === 'win') return COLOR_WIN
   if (result === 'loss') return COLOR_LOSS
+  if (result === 'pending') return COLOR_PENDING
   return COLOR_UNPLAYED
 }
 

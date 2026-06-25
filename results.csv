@@ -4,6 +4,6 @@ loss,CLC,CFTBL
 win,MAT,AIQ
 loss,GER,HP
 win,MAX,Dolly
-win,ABC,WCS
-win,DEF,Frontier
-loss,GH,MET
+win,TIM,WCS
+win,KEE,Frontier
+pending,DLD,MET

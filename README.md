@@ -34,7 +34,7 @@ win,MAT,AIQ
 
 | Column | Values | Description |
 |--------|--------|-------------|
-| `result` | `win` or `loss` | Outcome of the match |
+| `result` | `win`, `loss`, or `pending` | Outcome of the match (`pending` colors the slice blue) |
 | `opponent` | 1–3 capital letters | Opponent's initials |
 | `machine` | any string | Pinball machine name |
 
