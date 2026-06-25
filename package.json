@@ -1,0 +1,11 @@
+{
+  "name": "strikes",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/render.js"
+  },
+  "dependencies": {
+    "canvas": "^3.2.3"
+  }
+}
